@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- PÁGINAS PRINCIPAIS -->
+  <url>
+    <loc>https://evasoft-solutions.netlify.app/</loc>
+    <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://evasoft-solutions.netlify.app/contacto.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://evasoft-solutions.netlify.app/portfolio.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- SERVIÇOS -->
+  <url>
+    <loc>https://evasoft-solutions.netlify.app/servicos/websites.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://evasoft-solutions.netlify.app/servicos/landing-pages.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://evasoft-solutions.netlify.app/servicos/sistemas-web.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://evasoft-solutions.netlify.app/servicos/ecommerce.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://evasoft-solutions.netlify.app/servicos/gestao-escolar.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://evasoft-solutions.netlify.app/servicos/gestao-farmacias.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://evasoft-solutions.netlify.app/servicos/gestao-hospitalar.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://evasoft-solutions.netlify.app/servicos/sistema-vendas.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://evasoft-solutions.netlify.app/servicos/solucao-personalizada.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- EMPRESA -->
+  <url>
+    <loc>https://evasoft-solutions.netlify.app/empresa/quem-somos.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://evasoft-solutions.netlify.app/empresa/equipa.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://evasoft-solutions.netlify.app/empresa/candidaturas.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://evasoft-solutions.netlify.app/empresa/faqs.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- LEGAL -->
+  <url>
+    <loc>https://evasoft-solutions.netlify.app/legal/privacidade.html</loc>
+    <priority>0.4</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://evasoft-solutions.netlify.app/legal/termos.html</loc>
+    <priority>0.4</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+</urlset>
