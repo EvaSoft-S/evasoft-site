@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestão Hospitalar — EvaSoft Solutions</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/servico.css">
+  <link rel="stylesheet" href="../css/websites.css">
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <a href="../index.html" class="logo">
+      <div class="logo-icon">ES</div>
+      <div class="logo-text">
+        <span class="logo-name"><b>Eva</b>Soft</span>
+        <span class="logo-sub">SOLUTIONS</span>
+      </div>
+    </a>
+    <ul id="navMenu">
+      <li><a href="../index.html">Home</a></li>
+      <li class="nav-dropdown">
+        <a href="#" class="nav-dropdown-trigger">Serviços
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="dropdown-menu">
+          <a href="websites.html" class="dropdown-item">
+            <div class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div>
+            <div class="dropdown-text"><span class="dropdown-nome">Criação de Websites</span><span class="dropdown-desc">Sites profissionais sob medida</span></div>
+          </a>
+          <a href="landing-pages.html" class="dropdown-item">
+            <div class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8"/></svg></div>
+            <div class="dropdown-text"><span class="dropdown-nome">Landing Pages</span><span class="dropdown-desc">Páginas de alta conversão</span></div>
+          </a>
+          <a href="sistemas-web.html" class="dropdown-item">
+            <div class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+            <div class="dropdown-text"><span class="dropdown-nome">Sistemas Web</span><span class="dropdown-desc">Sistemas personalizados à medida</span></div>
+          </a>
+          <a href="ecommerce.html" class="dropdown-item">
+            <div class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></div>
+            <div class="dropdown-text"><span class="dropdown-nome">E-commerce</span><span class="dropdown-desc">Lojas online profissionais</span></div>
+          </a>
+        </div>
+      </li>
+      <li class="nav-dropdown">
+        <a href="#" class="nav-dropdown-trigger">Empresa
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="dropdown-menu">
+          <a href="../empresa/quem-somos.html" class="dropdown-item">
+            <div class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+            <div class="dropdown-text"><span class="dropdown-nome">Quem Somos</span><span class="dropdown-desc">História, missão e valores</span></div>
+          </a>
+          <a href="../empresa/equipa.html" class="dropdown-item">
+            <div class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+            <div class="dropdown-text"><span class="dropdown-nome">Nossa Equipa</span><span class="dropdown-desc">Conheça quem faz acontecer</span></div>
+          </a>
+          <a href="../empresa/candidaturas.html" class="dropdown-item">
+            <div class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 3H8v4h8V3z"/></svg></div>
+            <div class="dropdown-text"><span class="dropdown-nome">Candidaturas</span><span class="dropdown-desc">Vagas e candidatura espontânea</span></div>
+          </a>
+          <a href="../empresa/faqs.html" class="dropdown-item">
+            <div class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3M12 17h.01"/></svg></div>
+            <div class="dropdown-text"><span class="dropdown-nome">FAQs</span><span class="dropdown-desc">Perguntas frequentes</span></div>
+          </a>
+          <a href="../contacto.html" class="dropdown-item">
+            <div class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></div>
+            <div class="dropdown-text"><span class="dropdown-nome">Contacto</span><span class="dropdown-desc">Fale connosco directamente</span></div>
+          </a>
+        </div>
+      </li>
+      <li><a href="../portfolio.html">Portfólio</a></li>
+    </ul>
+    <a href="../contacto.html" class="btn btn-primary nav-cta">Solicitar orçamento</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="ws-hero">
+    <div class="ws-hero-content animar">
+      <a href="sistemas-web.html#tipos" class="breadcrumb">← Voltar aos tipos de sistemas</a>
+      <span class="hero-tag">Sistema de Gestão Hospitalar</span>
+      <h1>Gerencie o seu hospital <em>com precisão e eficiência.</em></h1>
+      <p>Um sistema completo para a gestão hospitalar angolana — consultas, internamentos, histórico clínico, farmácia e faturação integrados numa só plataforma.</p>
+      <div class="hero-actions">
+        <a href="../contacto.html" class="btn btn-primary">Solicitar orçamento</a>
+        <a href="#preco" class="btn btn-outline">Ver preço</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUNCIONALIDADES -->
+  <section class="servico-features">
+    <div class="section-header animar">
+      <span class="section-label">O que inclui</span>
+      <h2>Tudo o que o seu hospital precisa</h2>
+      <p>Cada funcionalidade foi pensada para o fluxo real de uma unidade de saúde angolana.</p>
+    </div>
+    <div class="features-grid">
+
+      <div class="feature-item animar atraso-1">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+          </svg>
+        </div>
+        <div class="feature-text">
+          <h4>Gestão de Pacientes</h4>
+          <p>Registo completo de pacientes, histórico clínico, alergias e acompanhamento de tratamentos.</p>
+        </div>
+      </div>
+
+      <div class="feature-item animar atraso-2">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>
+          </svg>
+        </div>
+        <div class="feature-text">
+          <h4>Agendamento de Consultas</h4>
+          <p>Marcação de consultas por médico e especialidade — sem conflitos de horário.</p>
+        </div>
+      </div>
+
+      <div class="feature-item animar atraso-3">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+          </svg>
+        </div>
+        <div class="feature-text">
+          <h4>Internamentos</h4>
+          <p>Gestão de camas, internamentos e altas — controlo em tempo real da ocupação.</p>
+        </div>
+      </div>
+
+      <div class="feature-item animar atraso-4">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+            <path d="M8 12h8M12 8v8"/>
+          </svg>
+        </div>
+        <div class="feature-text">
+          <h4>Farmácia Hospitalar</h4>
+          <p>Gestão de medicamentos, requisições, stock e dispensação integrada com o sistema clínico.</p>
+        </div>
+      </div>
+
+      <div class="feature-item animar atraso-1">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+            <path d="M14 2v6h6M16 13H8M16 17H8"/>
+          </svg>
+        </div>
+        <div class="feature-text">
+          <h4>Relatórios Clínicos</h4>
+          <p>Geração automática de relatórios médicos, fichas de alta e documentos clínicos.</p>
+        </div>
+      </div>
+
+      <div class="feature-item animar atraso-2">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+        </div>
+        <div class="feature-text">
+          <h4>Faturação e Pagamentos</h4>
+          <p>Emissão de facturas, recibos e controlo de pagamentos — seguros e particulares.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- O QUE ESTÁ INCLUÍDO -->
+  <section class="servico-inclui">
+    <div class="section-header animar">
+      <span class="section-label">O que está incluído</span>
+      <h2>Mais do que um sistema — uma solução completa</h2>
+      <p>O orçamento da EvaSoft inclui tudo o que a sua unidade de saúde precisa para operar digitalmente desde o primeiro dia.</p>
+    </div>
+    <div class="inclui-grid">
+      <div class="inclui-card animar atraso-1">
+        <div class="inclui-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+        <h4>Sistema à medida</h4>
+        <p>Desenvolvido de raiz com base na estrutura e processos da sua unidade de saúde.</p>
+      </div>
+      <div class="inclui-card animar atraso-2">
+        <div class="inclui-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div>
+        <h4>Domínio à sua escolha</h4>
+        <p>Registo do domínio — .ao ou .com. Preço separado a combinar.</p>
+      </div>
+      <div class="inclui-card animar atraso-3">
+        <div class="inclui-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <h4>Hospedagem incluída</h4>
+        <p>Sistema alojado num servidor profissional e seguro. Renovação anual a combinar.</p>
+      </div>
+      <div class="inclui-card animar atraso-4">
+        <div class="inclui-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></div>
+        <h4>Até 2 e-mails corporativos</h4>
+        <p>Endereços profissionais com o domínio da sua unidade de saúde.</p>
+      </div>
+      <div class="inclui-card animar atraso-1">
+        <div class="inclui-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <h4>Formação da equipa</h4>
+        <p>Sessões de formação para médicos, enfermeiros e administrativos.</p>
+      </div>
+      <div class="inclui-card animar atraso-2">
+        <div class="inclui-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg></div>
+        <h4>Suporte pós-lançamento</h4>
+        <p>Acompanhamento contínuo após a entrega — estamos sempre disponíveis.</p>
+      </div>
+    </div>
+    <p class="inclui-nota">* Domínio e hospedagem têm custo separado a combinar conforme o tipo escolhido.</p>
+  </section>
+
+  <!-- PREÇO -->
+  <section class="servico-preco" id="preco">
+    <div class="preco-card animar">
+      <div class="preco-header">
+        <span class="section-label">Investimento</span>
+        <h2>Sistema de Gestão Hospitalar</h2>
+      </div>
+      <div class="preco-valor">
+        <span class="preco-desde">Preço</span>
+        <span class="preco-numero">Sob consulta</span>
+      </div>
+      <p class="preco-nota">O preço depende da dimensão da unidade, das funcionalidades e do número de utilizadores. A análise inicial é gratuita e sem compromisso.</p>
+      <ul class="preco-inclui">
+        <li>✓ Análise da unidade de saúde incluída</li>
+        <li>✓ Desenvolvimento 100% à medida</li>
+        <li>✓ Formação de toda a equipa</li>
+        <li>✓ Suporte pós-lançamento</li>
+        <li>✓ Domínio e hospedagem no orçamento</li>
+      </ul>
+      <a href="../contacto.html" class="btn btn-primary btn-large">Solicitar análise gratuita</a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-content animar">
+      <span class="section-label">Pronto para começar?</span>
+      <h2>Vamos digitalizar a sua unidade de saúde.</h2>
+      <p>Fale connosco e receba uma proposta personalizada em menos de 24 horas.</p>
+      <a href="../contacto.html" class="btn btn-white">Solicitar análise gratuita</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="../index.html" class="logo">
+          <div class="logo-icon">ES</div>
+          <div class="logo-text">
+            <span class="logo-name"><b>Eva</b>Soft</span>
+            <span class="logo-sub">SOLUTIONS</span>
+          </div>
+        </a>
+        <p class="footer-descricao">Desenvolvemos sistemas à medida do seu negócio — do seu jeito, com a sua lógica, para a sua realidade.</p>
+        <div class="footer-social">
+          <a href="#" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a>
+          <a href="#" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-titulo">Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#servicos">Serviços</a></li>
+          <li><a href="../portfolio.html">Portfólio</a></li>
+          <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-titulo">Serviços</h4>
+        <ul class="footer-links">
+          <li><a href="websites.html">Criação de Websites</a></li>
+          <li><a href="landing-pages.html">Landing Pages</a></li>
+          <li><a href="sistemas-web.html">Sistemas Web</a></li>
+          <li><a href="ecommerce.html">E-commerce</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-titulo">Empresa</h4>
+        <ul class="footer-links">
+          <li><a href="../empresa/quem-somos.html">Quem Somos</a></li>
+          <li><a href="../empresa/equipa.html">Nossa Equipa</a></li>
+          <li><a href="../empresa/candidaturas.html">Candidaturas</a></li>
+          <li><a href="../empresa/faqs.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-titulo">Contacto</h4>
+        <ul class="footer-contacto">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+            <a href="mailto:contato@evasoft.ao">contato@evasoft.ao</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.531 5.856L.057 23.886l6.196-1.448A11.938 11.938 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.847 9.847 0 01-5.031-1.378l-.36-.214-3.733.873.936-3.423-.235-.373A9.836 9.836 0 012.106 12C2.106 6.526 6.526 2.106 12 2.106S21.894 6.526 21.894 12 17.474 21.894 12 21.894z"/></svg>
+            <a href="https://wa.me/244944268357" target="_blank">+244 944 268 357</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Avª. 11 de Novembro — Rua 5 de Outubro, Huambo</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+  <p>© 2026 EvaSoft Solutions · Todos os direitos reservados</p>
+  <p>Desenvolvido pela <span>EvaSoft Solutions</span></p>
+  <div class="footer-legal-links">
+    <a href="../legal/privacidade.html">Política de Privacidade</a>
+    <a href="../legal/termos.html">Termos e Condições</a>
+  </div>
+</div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* ================================
+   O QUE É UMA LANDING PAGE
+   ================================ */
+
+.lp-oque {
+  background: var(--white);
+  padding: 5.5rem 6%;
+}
+
+.lp-oque-content {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.lp-oque-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.lp-oque-texto h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(1.9rem, 3.5vw, 2.7rem);
+  color: var(--navy);
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+.lp-oque-texto p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.lp-oque-visual {
+  flex: 1;
+  min-width: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(10,37,64,0.12);
+}
+
+.lp-oque-visual img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ================================
+   QUANDO USAR
+   ================================ */
+
+.lp-quando {
+  background: var(--navy);
+  padding: 5.5rem 6%;
+}
+
+.lp-quando .section-header h2 {
+  color: var(--white);
+}
+
+.lp-quando .section-header p {
+  color: rgba(255,255,255,0.65);
+}
+
+.lp-quando-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.lp-quando-item {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.25s;
+}
+
+.lp-quando-item:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.lp-quando-num {
+  display: block;
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.5rem;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+  opacity: 0.6;
+}
+
+.lp-quando-item h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.lp-quando-item p {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
+}
+
+/* ================================
+   RESPONSIVO
+   ================================ */
+
+@media (max-width: 768px) {
+  .lp-oque-content {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .lp-oque-visual img {
+    height: 260px;
+  }
+}

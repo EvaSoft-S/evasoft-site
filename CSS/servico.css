@@ -1,0 +1,288 @@
+/* ================================
+   HERO DO SERVIÇO
+   ================================ */
+
+.servico-hero {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 6%;
+  background: linear-gradient(155deg, #f5f9ff 0%, #eaf3fd 45%, #deedfb 100%);
+  min-height: 80vh;
+  flex-wrap: wrap;
+}
+
+.servico-hero-content {
+  flex: 1;
+  min-width: 280px;
+  max-width: 560px;
+ 
+}
+
+.servico-hero-content p {
+  margin-bottom: 2.5rem;
+}
+
+.breadcrumb {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  transition: opacity 0.2s;
+}
+
+.breadcrumb:hover {
+  opacity: 0.7;
+}
+
+.servico-hero-image {
+  flex: 1;
+  min-width: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(55, 138, 221, 0.15);
+}
+
+.servico-hero-image img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ================================
+   FUNCIONALIDADES
+   ================================ */
+
+.servico-features {
+  background: var(--white);
+  padding: 5.5rem 6%;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.feature-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.feature-icon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  background: var(--blue-light);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-dark);
+}
+
+.feature-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.feature-text h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--blue-dark);
+  margin-bottom: 0.35rem;
+}
+
+.feature-text p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* ================================
+   PREÇO
+   ================================ */
+
+.servico-preco {
+  background: var(--blue-light);
+  padding: 5.5rem 6%;
+  display: flex;
+  justify-content: center;
+}
+
+.preco-card {
+  background: var(--white);
+  border-radius: 24px;
+  padding: 3rem;
+  max-width: 560px;
+  width: 100%;
+  border: 2px solid #dce8f5;
+  text-align: center;
+}
+
+.preco-header {
+  margin-bottom: 2rem;
+}
+
+.preco-header h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.8rem;
+  color: var(--blue-dark);
+  margin-top: 0.5rem;
+}
+
+.preco-valor {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.preco-desde {
+  font-size: 14px;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.preco-numero {
+  font-family: 'DM Serif Display', serif;
+  font-size: 3rem;
+  color: var(--blue-dark);
+  line-height: 1;
+}
+
+.preco-nota {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1.75rem;
+}
+
+.preco-inclui {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.preco-inclui li {
+  font-size: 0.9rem;
+  color: var(--blue-dark);
+  font-weight: 500;
+}
+
+.btn-large {
+  width: 100%;
+  text-align: center;
+  padding: 0.9rem;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+/* ================================
+   RESPONSIVO
+   ================================ */
+
+@media (max-width: 768px) {
+  .servico-hero {
+    min-height: auto;
+    padding: 3rem 6%;
+  }
+
+  .servico-hero-image {
+    width: 100%;
+  }
+
+  .servico-hero-image img {
+    height: 240px;
+  }
+
+  .preco-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .preco-numero {
+    font-size: 2.2rem;
+  }
+}
+
+/* ================================
+   O QUE ESTÁ INCLUÍDO
+   ================================ */
+
+.servico-inclui {
+  background: var(--blue-light);
+  padding: 5.5rem 6%;
+}
+
+.inclui-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.inclui-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 1.75rem;
+  border: 1px solid #dce8f5;
+  transition: all 0.25s;
+}
+
+.inclui-card:hover {
+  border-color: var(--blue);
+  box-shadow: 0 8px 32px rgba(55, 138, 221, 0.1);
+  transform: translateY(-2px);
+}
+
+.inclui-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--blue-light);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: var(--blue-dark);
+  border: 1px solid #dce8f5;
+}
+
+.inclui-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.inclui-card h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--blue-dark);
+  margin-bottom: 0.5rem;
+}
+
+.inclui-card p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.inclui-card strong {
+  color: var(--blue-dark);
+  font-weight: 600;
+}
+
+.inclui-nota {
+  font-size: 12px;
+  color: var(--gray);
+  font-style: italic;
+  margin-top: 2rem;
+  text-align: center;
+}

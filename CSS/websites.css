@@ -1,0 +1,366 @@
+/* ================================
+   HERO — WEBSITES
+   ================================ */
+
+.ws-hero {
+  background: linear-gradient(135deg, #0A2540 0%, #1A3D6B 50%, #2563A8 100%);
+  padding: 6rem 6% 5rem;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.ws-hero-content {
+  max-width: 680px;
+}
+
+.ws-hero-content h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+  line-height: 1.1;
+  color: var(--white);
+  margin: 1rem 0 1.5rem;
+}
+
+.ws-hero-content h1 em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.ws-hero-content p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.8;
+  max-width: 540px;
+  margin-bottom: 2.5rem;
+}
+
+.breadcrumb {
+  display: inline-block;
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  transition: color 0.2s;
+}
+
+.breadcrumb:hover {
+  color: var(--gold);
+}
+
+/* ================================
+   SOBRE WEBSITES
+   ================================ */
+
+.ws-sobre {
+  background: var(--cream);
+  padding: 5.5rem 6%;
+}
+
+.ws-sobre-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.ws-sobre-item {
+  background: var(--white);
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 1.75rem;
+  transition: all 0.25s;
+}
+
+.ws-sobre-item:hover {
+  border-color: var(--gold);
+  box-shadow: 0 8px 32px rgba(5,172,250,0.1);
+  transform: translateY(-2px);
+}
+
+.ws-sobre-item h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 1rem 0 0.5rem;
+}
+
+.ws-sobre-item p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* ================================
+   POR QUE ESCOLHER
+   ================================ */
+
+.ws-porque {
+  background: var(--white);
+  padding: 5.5rem 6%;
+}
+
+.ws-porque-content {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ws-porque-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.ws-porque-texto h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(1.9rem, 3.5vw, 2.7rem);
+  color: var(--navy);
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+.ws-razoes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.ws-razoes li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.ws-razoes svg {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  color: var(--gold);
+  margin-top: 2px;
+}
+
+.ws-porque-visual {
+  flex: 1;
+  min-width: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(10,37,64,0.12);
+}
+
+.ws-porque-visual img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ================================
+   PLANOS
+   ================================ */
+
+.ws-planos {
+  background: var(--cream);
+  padding: 5.5rem 6%;
+  text-align: center;
+}
+
+.planos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.plano-card {
+  background: var(--white);
+  border: 1.5px solid #E2E8F0;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: left;
+  position: relative;
+  transition: all 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+
+.plano-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 12px 40px rgba(5,172,250,0.12);
+  transform: translateY(-4px);
+}
+
+.plano-destaque {
+  border-color: var(--gold);
+  box-shadow: 0 12px 40px rgba(5,172,250,0.15);
+}
+
+.plano-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gold);
+  color: var(--navy);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 16px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.plano-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.plano-nome {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.35rem;
+}
+
+.plano-desc {
+  display: block;
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.plano-preco {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.plano-desde {
+  font-size: 12px;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.plano-valor {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  color: var(--navy);
+  line-height: 1;
+}
+
+.plano-pagamento {
+  display: block;
+  font-size: 11px;
+  color: var(--gray);
+  margin-top: 4px;
+}
+
+.plano-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  flex: 1;
+  margin-bottom: 1.75rem;
+}
+
+.plano-features li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.plano-features li.inclui {
+  color: var(--text);
+}
+
+.plano-features li.nao-inclui {
+  color: var(--gray);
+  opacity: 0.6;
+}
+
+.plano-features li svg {
+  width: 15px;
+  height: 15px;
+  min-width: 15px;
+}
+
+.plano-features li.inclui svg {
+  color: var(--gold);
+}
+
+.plano-features li.nao-inclui svg {
+  color: var(--gray);
+}
+
+.plano-features b {
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.plano-btn {
+  display: block;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  background: var(--navy);
+  color: var(--white);
+  transition: all 0.2s;
+}
+
+.plano-btn:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.plano-destaque .plano-btn {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.plano-destaque .plano-btn:hover {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.planos-nota {
+  font-size: 12px;
+  color: var(--gray);
+  font-style: italic;
+  text-align: center;
+}
+
+/* ================================
+   RESPONSIVO
+   ================================ */
+
+@media (max-width: 768px) {
+  .ws-porque-content {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .ws-porque-visual img {
+    height: 260px;
+  }
+
+  .planos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ws-hero {
+    min-height: auto;
+    padding: 4rem 6% 3rem;
+  }
+}

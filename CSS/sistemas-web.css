@@ -1,0 +1,243 @@
+/* ================================
+   POR QUE DESENVOLVER
+   ================================ */
+
+.sw-porque {
+  background: var(--cream);
+  padding: 5.5rem 6%;
+}
+
+.sw-ganhos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.sw-ganho {
+  background: var(--white);
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 1.75rem;
+  transition: all 0.25s;
+}
+
+.sw-ganho:hover {
+  border-color: var(--gold);
+  box-shadow: 0 8px 32px rgba(5,172,250,0.1);
+  transform: translateY(-2px);
+}
+
+.sw-ganho-icon {
+  width: 46px;
+  height: 46px;
+  background: var(--blue-light);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: var(--gold);
+}
+
+.sw-ganho-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.sw-ganho h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+
+.sw-ganho p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* ================================
+   TIPOS DE SISTEMAS
+   ================================ */
+
+.sw-tipos {
+  background: var(--white);
+  padding: 5.5rem 6%;
+}
+
+.sw-tipos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.sw-tipo-card {
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.25s;
+  background: var(--white);
+  position: relative;
+}
+
+.sw-tipo-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+  z-index: 1;
+}
+
+.sw-tipo-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 8px 36px rgba(5,172,250,0.13);
+  transform: translateY(-3px);
+}
+
+.sw-tipo-card:hover::before {
+  transform: scaleX(1);
+}
+
+.sw-tipo-image {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+}
+
+.sw-tipo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.sw-tipo-card:hover .sw-tipo-image img {
+  transform: scale(1.05);
+}
+
+.sw-tipo-body {
+  padding: 1.5rem;
+}
+
+.sw-tipo-body h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0.75rem 0 0.5rem;
+}
+
+.sw-tipo-body p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.sw-tipo-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gold);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.sw-tipo-link:hover {
+  opacity: 0.75;
+}
+
+/* ================================
+   PREÇO
+   ================================ */
+
+.sw-preco {
+  background: var(--navy);
+  padding: 5.5rem 6%;
+  display: flex;
+  justify-content: center;
+}
+
+.sw-preco-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 24px;
+  padding: 3rem;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sw-preco-card h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.9rem;
+  color: var(--white);
+  margin: 0.5rem 0 1rem;
+}
+
+.sw-preco-card p {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+
+.sw-preco-card .preco-inclui {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.sw-preco-card .preco-inclui li {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.8);
+  font-weight: 500;
+}
+
+.sw-preco-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 220px;
+}
+
+.sw-preco-valor {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.sw-preco-valor .plano-desde {
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+}
+
+.sw-preco-valor .plano-valor {
+  color: var(--white);
+}
+
+/* ================================
+   RESPONSIVO
+   ================================ */
+
+@media (max-width: 768px) {
+  .sw-preco-card {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .sw-tipos-grid {
+    grid-template-columns: 1fr;
+  }
+}

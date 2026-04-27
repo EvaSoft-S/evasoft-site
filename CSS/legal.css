@@ -1,0 +1,130 @@
+/* ================================
+   HERO — PÁGINAS LEGAIS
+   ================================ */
+
+.legal-hero {
+  background: linear-gradient(135deg, #0A2540 0%, #1A3D6B 50%, #2563A8 100%);
+  padding: 5rem 6% 4rem;
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+}
+
+.legal-hero-content {
+  max-width: 680px;
+}
+
+.legal-hero h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--white);
+  margin: 0.75rem 0 0.5rem;
+  line-height: 1.2;
+}
+
+.legal-hero p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  margin-top: 0.5rem;
+}
+
+/* ================================
+   CONTEÚDO LEGAL
+   ================================ */
+
+.legal-content {
+  background: var(--cream);
+  padding: 5rem 6%;
+}
+
+.legal-wrapper {
+  max-width: 780px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.legal-intro {
+  background: var(--white);
+  border-left: 4px solid var(--gold);
+  border-radius: 0 12px 12px 0;
+  padding: 1.5rem 2rem;
+}
+
+.legal-intro p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.legal-section {
+  background: var(--white);
+  border-radius: 14px;
+  padding: 2rem;
+  border: 1px solid #E2E8F0;
+}
+
+.legal-section h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.3rem;
+  color: var(--navy);
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #f0f4fa;
+}
+
+.legal-section p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
+.legal-section p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-section ul {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.legal-section ul li {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.legal-section strong {
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.legal-section a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.legal-section a:hover {
+  opacity: 0.75;
+}
+
+.legal-contacto {
+  background: var(--blue-light);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.legal-contacto p {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
