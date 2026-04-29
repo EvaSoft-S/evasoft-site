@@ -364,3 +364,47 @@
     padding: 4rem 6% 3rem;
   }
 }
+
+/* ================================
+   PREÇO COM/SEM DOMÍNIO
+   ================================ */
+
+.plano-preco-dominio {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.plano-destaque .plano-preco-dominio {
+  border-top-color: rgba(255,255,255,0.2);
+}
+
+.plano-card:not(.plano-destaque) .plano-preco-dominio {
+  border-top-color: #f0f4fa;
+}
+
+.plano-com-dominio {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.plano-destaque .plano-com-dominio {
+  color: rgba(10,37,64,0.7);
+}
+
+.plano-com-dominio b {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.plano-destaque .plano-com-dominio b {
+  color: var(--navy);
+}
+
+.plano-sem-dominio {
+  font-size: 12px;
+  color: var(--gray);
+}
