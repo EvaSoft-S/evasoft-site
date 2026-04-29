@@ -212,28 +212,35 @@
 
       <!-- STARTER -->
       <div class="plano-card animar atraso-1">
+        <div class="plano-toggle">
+          <button class="toggle-btn active" data-plano="com">Com domínio</button>
+          <button class="toggle-btn" data-plano="sem">Sem domínio</button>
+        </div>
+
         <div class="plano-header">
           <span class="plano-nome">Starter</span>
           <span class="plano-desc">Para pequenos negócios que precisam de presença online</span>
           <div class="plano-preco">
             <span class="plano-desde">A partir de</span>
-            <span class="plano-valor">80.000 Kz</span>
+            <span class="plano-valor" data-com="104.900 Kz" data-sem="80.000 Kz">104.900 Kz</span>
           </div>
-          <span class="plano-pagamento">Desenvolvimento · Pagamento único</span>
-          <div class="plano-preco-dominio">
-            <span class="plano-com-dominio">Com domínio .ao ou .com: <b>104.900 Kz</b></span>
-            <span class="plano-sem-dominio">Sem domínio: <b>80.000 Kz</b></span>
-          </div>
+          <span class="plano-pagamento" data-com="Desenvolvimento + domínio .ao ou .com · Pagamento único" data-sem="Só desenvolvimento · Pagamento único">Desenvolvimento + domínio .ao ou .com · Pagamento único</span>
         </div>
+
         <ul class="plano-features">
           <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Até <b>5 páginas</b> web</span></li>
           <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Design responsivo (mobile + desktop)</span></li>
           <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Formulário de contacto</span></li>
           <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>SEO básico</span></li>
           <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Integração com redes sociais</span></li>
-          <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Certificado SSL gratuito</span></li>
-          <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>1 e-mail corporativo</span></li>
-          <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Hospedagem gratuita por 1 ano</span></li>
+          <li class="inclui toggle-item" data-show="com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Domínio .ao ou .com (1 ano)</span></li>
+          <li class="inclui toggle-item" data-show="com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Hospedagem gratuita por 1 ano</span></li>
+          <li class="inclui toggle-item" data-show="com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Certificado SSL gratuito</span></li>
+          <li class="inclui toggle-item" data-show="com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>1 e-mail corporativo</span></li>
+          <li class="inclui toggle-item" data-show="sem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Código entregue para o seu servidor</span></li>
+          <li class="nao-inclui toggle-item" data-show="sem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg><span>Domínio (cliente gere o seu)</span></li>
+          <li class="nao-inclui toggle-item" data-show="sem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg><span>Hospedagem (cliente gere a sua)</span></li>
+          <li class="nao-inclui toggle-item" data-show="sem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg><span>SSL (cliente gere o seu)</span></li>
           <li class="nao-inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg><span>Painel de gestão de conteúdo</span></li>
           <li class="nao-inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg><span>Blog integrado</span></li>
           <li class="nao-inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg><span>Chat ao vivo</span></li>
@@ -244,18 +251,18 @@
       <!-- PRO -->
       <div class="plano-card plano-destaque animar atraso-2">
         <div class="plano-badge">Mais popular</div>
+        <div class="plano-toggle">
+          <button class="toggle-btn active" data-plano="com">Com domínio</button>
+          <button class="toggle-btn" data-plano="sem">Sem domínio</button>
+        </div>
         <div class="plano-header">
           <span class="plano-nome">Pro</span>
           <span class="plano-desc">Para empresas em crescimento com mais necessidades</span>
           <div class="plano-preco">
             <span class="plano-desde">A partir de</span>
-            <span class="plano-valor">150.000 Kz</span>
+            <span class="plano-valor" data-com="174.900 Kz" data-sem="150.000 Kz">174.900 Kz</span>
           </div>
-          <span class="plano-pagamento">Desenvolvimento · Pagamento único</span>
-          <div class="plano-preco-dominio">
-            <span class="plano-com-dominio">Com domínio .ao ou .com: <b>174.900 Kz</b></span>
-            <span class="plano-sem-dominio">Sem domínio: <b>150.000 Kz</b></span>
-          </div>
+          <span class="plano-pagamento" data-com="Desenvolvimento + domínio .ao ou .com · Pagamento único" data-sem="Só desenvolvimento · Pagamento único">Desenvolvimento + domínio .ao ou .com · Pagamento único</span>
         </div>
         <ul class="plano-features">
           <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Até <b>15 páginas</b> web</span></li>
@@ -263,11 +270,16 @@
           <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Formulário de contacto avançado</span></li>
           <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>SEO avançado + Google Analytics</span></li>
           <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Integração com redes sociais</span></li>
-          <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Certificado SSL gratuito</span></li>
-          <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>2 e-mails corporativos</span></li>
-          <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Hospedagem gratuita por 1 ano</span></li>
           <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Painel de gestão de conteúdo</span></li>
           <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Blog integrado</span></li>
+          <li class="inclui toggle-item" data-show="com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Domínio .ao ou .com (1 ano)</span></li>
+          <li class="inclui toggle-item" data-show="com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Hospedagem gratuita por 1 ano</span></li>
+          <li class="inclui toggle-item" data-show="com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Certificado SSL gratuito</span></li>
+          <li class="inclui toggle-item" data-show="com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>2 e-mails corporativos</span></li>
+          <li class="inclui toggle-item" data-show="sem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Código entregue para o seu servidor</span></li>
+          <li class="nao-inclui toggle-item" data-show="sem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg><span>Domínio (cliente gere o seu)</span></li>
+          <li class="nao-inclui toggle-item" data-show="sem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg><span>Hospedagem (cliente gere a sua)</span></li>
+          <li class="nao-inclui toggle-item" data-show="sem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg><span>SSL (cliente gere o seu)</span></li>
           <li class="nao-inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg><span>Chat ao vivo</span></li>
         </ul>
         <a href="../contacto.html" class="plano-btn">Solicitar orçamento</a>
@@ -275,18 +287,18 @@
 
       <!-- ENTERPRISE -->
       <div class="plano-card animar atraso-3">
+        <div class="plano-toggle">
+          <button class="toggle-btn active" data-plano="com">Com domínio</button>
+          <button class="toggle-btn" data-plano="sem">Sem domínio</button>
+        </div>
         <div class="plano-header">
           <span class="plano-nome">Enterprise</span>
           <span class="plano-desc">Para grandes empresas com necessidades avançadas</span>
           <div class="plano-preco">
             <span class="plano-desde">A partir de</span>
-            <span class="plano-valor">280.000 Kz</span>
+            <span class="plano-valor" data-com="304.900 Kz" data-sem="280.000 Kz">304.900 Kz</span>
           </div>
-          <span class="plano-pagamento">Desenvolvimento · Pagamento único</span>
-          <div class="plano-preco-dominio">
-            <span class="plano-com-dominio">Com domínio .ao ou .com: <b>304.900 Kz</b></span>
-            <span class="plano-sem-dominio">Sem domínio: <b>280.000 Kz</b></span>
-          </div>
+          <span class="plano-pagamento" data-com="Desenvolvimento + domínio .ao ou .com · Pagamento único" data-sem="Só desenvolvimento · Pagamento único">Desenvolvimento + domínio .ao ou .com · Pagamento único</span>
         </div>
         <ul class="plano-features">
           <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Até <b>25 páginas</b> web</span></li>
@@ -294,18 +306,23 @@
           <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Formulário de contacto avançado</span></li>
           <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>SEO completo + Google Analytics</span></li>
           <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Integração com redes sociais</span></li>
-          <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Certificado SSL gratuito</span></li>
-          <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>5 e-mails corporativos</span></li>
-          <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Hospedagem gratuita por 1 ano</span></li>
           <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Painel de gestão de conteúdo</span></li>
           <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Blog integrado</span></li>
           <li class="inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Chat ao vivo</span></li>
+          <li class="inclui toggle-item" data-show="com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Domínio .ao ou .com (1 ano)</span></li>
+          <li class="inclui toggle-item" data-show="com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Hospedagem gratuita por 1 ano</span></li>
+          <li class="inclui toggle-item" data-show="com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Certificado SSL gratuito</span></li>
+          <li class="inclui toggle-item" data-show="com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>5 e-mails corporativos</span></li>
+          <li class="inclui toggle-item" data-show="sem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Código entregue para o seu servidor</span></li>
+          <li class="nao-inclui toggle-item" data-show="sem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg><span>Domínio (cliente gere o seu)</span></li>
+          <li class="nao-inclui toggle-item" data-show="sem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg><span>Hospedagem (cliente gere a sua)</span></li>
+          <li class="nao-inclui toggle-item" data-show="sem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg><span>SSL (cliente gere o seu)</span></li>
         </ul>
         <a href="../contacto.html" class="plano-btn">Solicitar orçamento</a>
       </div>
 
     </div>
-    <p class="planos-nota">* Renovação anual: domínio 34.900 Kz + hospedagem gratuita (Netlify). Domínio .co.ao ou .edu.ao: 34.900 Kz registo + 44.900 Kz renovação.</p>
+    <p class="planos-nota">* Renovação anual (com domínio): domínio 34.900 Kz + hospedagem gratuita (Netlify). Domínio .co.ao ou .edu.ao: 34.900 Kz registo.</p>
 
   </section>
 

@@ -124,3 +124,41 @@ whatsappBtn.innerHTML = `
   <span class="whatsapp-float-tooltip">Fale connosco</span>
 `;
 document.body.appendChild(whatsappBtn);
+
+// ================================
+// TOGGLE COM/SEM DOMÍNIO — PLANOS
+// ================================
+// Alterna entre o preço com domínio
+// e sem domínio em cada card de plano.
+// ================================
+
+document.querySelectorAll('.plano-toggle').forEach(function (toggle) {
+  const card = toggle.closest('.plano-card');
+  const btns = toggle.querySelectorAll('.toggle-btn');
+
+  btns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const opcao = this.getAttribute('data-plano');
+
+      btns.forEach(function (b) { b.classList.remove('active'); });
+      this.classList.add('active');
+
+      const valor = card.querySelector('.plano-valor');
+      const pagamento = card.querySelector('.plano-pagamento');
+      if (valor) valor.textContent = valor.getAttribute('data-' + opcao);
+      if (pagamento) pagamento.textContent = pagamento.getAttribute('data-' + opcao);
+
+      card.querySelectorAll('.toggle-item').forEach(function (item) {
+        if (item.getAttribute('data-show') === opcao) {
+          item.classList.remove('escondido');
+        } else {
+          item.classList.add('escondido');
+        }
+      });
+    });
+  });
+
+  card.querySelectorAll('.toggle-item[data-show="sem"]').forEach(function (item) {
+    item.classList.add('escondido');
+  });
+});
