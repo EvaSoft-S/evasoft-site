@@ -3,11 +3,14 @@
    ================================ */
 
 .ws-hero {
-  background: linear-gradient(135deg, #0A2540 0%, #1A3D6B 50%, #2563A8 100%);
-  padding: 6rem 6% 5rem;
-  min-height: 60vh;
+  min-height: 92vh;
   display: flex;
   align-items: center;
+  padding: 4rem 6%;
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+
 }
 
 .ws-hero-content {
@@ -15,7 +18,7 @@
 }
 
 .ws-hero-content h1 {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Syne', sans-serif;
   font-size: clamp(2.2rem, 4.5vw, 3.5rem);
   line-height: 1.1;
   color: var(--white);
@@ -113,7 +116,7 @@
 }
 
 .ws-porque-texto h2 {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Syne', sans-serif;
   font-size: clamp(1.9rem, 3.5vw, 2.7rem);
   color: var(--navy);
   line-height: 1.2;
@@ -248,7 +251,7 @@
 }
 
 .plano-valor {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Syne', sans-serif;
   font-size: 2rem;
   color: var(--navy);
   line-height: 1;

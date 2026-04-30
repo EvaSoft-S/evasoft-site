@@ -15,7 +15,7 @@
 }
 
 .portfolio-hero h1 {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Syne', sans-serif;
   font-size: clamp(2.2rem, 4.5vw, 3.5rem);
   line-height: 1.1;
   color: var(--white);

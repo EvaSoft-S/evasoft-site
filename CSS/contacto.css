@@ -14,7 +14,7 @@
 }
 
 .contacto-hero h1 {
-  font-family: 'DM Serif Display', serif;
+font-family: 'Syne', sans-serif;
   font-size: clamp(2rem, 4vw, 3rem);
    color: rgba(255,255,255,0.75);
   line-height: 1.2;
@@ -55,7 +55,7 @@
    ================================ */
 
 .contacto-info h3 {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Syne', sans-serif;
   font-size: 1.4rem;
   color: var(--blue-dark);
   margin-bottom: 1.75rem;

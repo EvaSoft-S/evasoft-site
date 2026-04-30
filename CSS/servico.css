@@ -129,7 +129,7 @@
 }
 
 .preco-header h2 {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Syne', sans-serif;
   font-size: 1.8rem;
   color: var(--blue-dark);
   margin-top: 0.5rem;
@@ -150,7 +150,7 @@
 }
 
 .preco-numero {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Syne', sans-serif;
   font-size: 3rem;
   color: var(--blue-dark);
   line-height: 1;

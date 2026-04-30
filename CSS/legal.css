@@ -15,7 +15,7 @@
 }
 
 .legal-hero h1 {
-  font-family: 'DM Serif Display', serif;
+font-family: 'Syne', sans-serif;
   font-size: clamp(2rem, 4vw, 3rem);
   color: var(--white);
   margin: 0.75rem 0 0.5rem;
@@ -65,7 +65,7 @@
 }
 
 .legal-section h2 {
-  font-family: 'DM Serif Display', serif;
+ font-family: 'Syne', sans-serif;
   font-size: 1.3rem;
   color: var(--navy);
   margin-bottom: 1rem;

@@ -20,7 +20,7 @@
 }
 
 .lp-oque-texto h2 {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Syne', sans-serif;
   font-size: clamp(1.9rem, 3.5vw, 2.7rem);
   color: var(--navy);
   line-height: 1.2;

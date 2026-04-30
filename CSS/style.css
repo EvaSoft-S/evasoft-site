@@ -3,18 +3,20 @@
    ================================ */
 
 :root {
-  --navy:          #0A2540;
-  --blue-dark:     #1A3D6B;
-  --blue:          #2563A8;
-  --blue-light:    #E8F0FA;
-  --gold:          #05acfa;
-  --gold-light:    #05acfa;
-  --gold-pale:     #FDF6E3;
+  --navy:          #0D0F14;
+  --blue-dark:     #0F1923;
+  --blue:          #0EA5E9;
+  --blue-light:    #E0F2FE;
+  --gold:          #0EA5E9;
+  --gold-light:    #38BDF8;
+  --gold-pale:     #F0F9FF;
   --cream:         #F8FAFC;
   --white:         #FFFFFF;
-  --gray:          #888780;
-  --text:          #0A2540;
-  --text-muted:    #4A5568;
+  --gray:          #64748B;
+  --text:          #0D0F14;
+  --text-muted:    #475569;
+  --border:        #E2E8F0;
+  --surface:       #1E2530;
 }
 
 * {
@@ -28,7 +30,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   color: var(--text);
   background: var(--white);
 }
@@ -41,11 +43,13 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.25rem 6%;
-  background: var(--navy);
+  padding: 1rem 6%;
+  background: rgba(13,15,20,0.95);
+  border-bottom: 1px solid rgba(14,165,233,0.1);
   position: sticky;
   top: 0;
   z-index: 100;
+  backdrop-filter: blur(12px);
 }
 
 .logo {
@@ -101,13 +105,14 @@ nav ul {
 
 nav ul a {
   text-decoration: none;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.65);
   font-size: 14px;
+  font-weight: 500;
   transition: color 0.2s;
 }
 
 nav ul a:hover {
-  color: var(--gold-light);
+  color: var(--blue);
 }
 
 /* ================================
@@ -249,8 +254,10 @@ nav ul a:hover {
 }
 
 .btn-primary {
-  background: var(--gold);
-  color: var(--navy);
+  background: var(--blue);
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 .btn-primary:hover {
@@ -260,12 +267,12 @@ nav ul a:hover {
 .btn-outline {
   background: transparent;
   color: var(--white);
-  border: 1.5px solid rgba(255,255,255,0.4);
+  border: 1px solid rgba(255,255,255,0.2);
 }
 
 .btn-outline:hover {
-  border-color: var(--gold);
-  color: var(--gold);
+  border-color: var(--blue);
+  color: var(--blue);
 }
 
 .btn-white {
@@ -297,7 +304,7 @@ nav ul a:hover {
   display: flex;
   align-items: center;
   padding: 4rem 6%;
- background: linear-gradient(135deg, #0A2540 0%, #1A3D6B 50%, #2563A8 100%);
+  background: var(--navy);
   position: relative;
   overflow: hidden;
 }
@@ -305,12 +312,21 @@ nav ul a:hover {
 .hero::before {
   content: '';
   position: absolute;
-  right: -5%;
-  top: 8%;
-  width: 560px;
-  height: 560px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(212,160,23,0.15) 0%, transparent 70%);
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(14,165,233,0.15) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 40% at 80% 60%, rgba(14,165,233,0.08) 0%, transparent 50%);
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image:
+    linear-gradient(rgba(14,165,233,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14,165,233,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 100%);
 }
 
 .hero-content {
@@ -321,34 +337,36 @@ nav ul a:hover {
 
 .hero-tag {
   display: inline-block;
-  background: rgba(212,160,23,0.15);
-  color: var(--gold-light);
-  border: 1px solid rgba(212,160,23,0.3);
+  background: rgba(14,165,233,0.1);
+  color: var(--blue);
+  border: 1px solid rgba(14,165,233,0.2);
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0.35rem 0.9rem;
-  border-radius: 20px;
+  border-radius: 6px;
   margin-bottom: 1.75rem;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .hero h1 {
-  font-family: 'DM Serif Display', serif;
-  font-size: clamp(2.4rem, 5vw, 3.8rem);
-  line-height: 1.1;
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.05;
   color: var(--white);
   margin-bottom: 1.5rem;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -1px;
 }
 
 .hero h1 em {
-  font-style: italic;
-  color: var(--gold-light);
+  font-style: normal;
+  color: var(--blue);
 }
 
 .hero p {
-  font-size: 1.05rem;
-  color: rgba(255,255,255,0.75);
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.6);
   line-height: 1.8;
   max-width: 510px;
   margin-bottom: 2.5rem;
@@ -421,17 +439,18 @@ section {
 }
 
 .section-label {
-  font-size: 12px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: var(--gold);
+  color: var(--blue);
   font-weight: 600;
   display: block;
   margin-bottom: 0.75rem;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .section-header h2 {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Syne', sans-serif;
   font-size: clamp(1.9rem, 3.5vw, 2.7rem);
   color: var(--navy);
   margin-bottom: 1rem;
@@ -711,7 +730,7 @@ section {
 }
 
 .about-text h2 {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Syne', sans-serif;
   font-size: clamp(1.9rem, 3.5vw, 2.7rem);
   color: var(--navy);
   margin-bottom: 0;
@@ -758,7 +777,7 @@ section {
 }
 
 .stat-num {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Syne', sans-serif;
   font-size: 2.6rem;
   color: var(--gold-light);
   line-height: 1;
@@ -795,7 +814,7 @@ section {
 }
 
 .cta h2 {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Syne', sans-serif;
   font-size: clamp(1.9rem, 3.5vw, 2.9rem);
   color: var(--white);
   line-height: 1.2;
@@ -1331,6 +1350,65 @@ footer .logo-sub {
 
   .nav-cta {
     display: none;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+    line-height: 1.15;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .planos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plano-toggle {
+    flex-direction: column;
+  }
+
+  .ws-hero-content h1 {
+    font-size: 1.9rem;
+  }
+
+  .empresa-hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .portfolio-hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .legal-hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .preco-numero {
+    font-size: 2rem;
+  }
+
+  .stat-num {
+    font-size: 2rem;
   }
 
 }
