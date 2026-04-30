@@ -162,3 +162,39 @@ document.querySelectorAll('.plano-toggle').forEach(function (toggle) {
     item.classList.add('escondido');
   });
 });
+
+// ================================
+// TOGGLE PREÇO — SISTEMAS WEB
+// ================================
+// Alterna entre preço com domínio+hospedagem
+// e só desenvolvimento nas páginas de sistema.
+// ================================
+
+document.querySelectorAll('.preco-toggle').forEach(function (toggle) {
+  const card = toggle.closest('.preco-card');
+  const btns = toggle.querySelectorAll('.toggle-btn');
+
+  btns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const opcao = this.getAttribute('data-plano');
+
+      btns.forEach(function (b) { b.classList.remove('active'); });
+      this.classList.add('active');
+
+      const numero = card.querySelector('.preco-numero');
+      if (numero) numero.textContent = numero.getAttribute('data-' + opcao);
+
+      card.querySelectorAll('.toggle-item').forEach(function (item) {
+        if (item.getAttribute('data-show') === opcao) {
+          item.classList.remove('escondido');
+        } else {
+          item.classList.add('escondido');
+        }
+      });
+    });
+  });
+
+  card.querySelectorAll('.toggle-item[data-show="sem"]').forEach(function (item) {
+    item.classList.add('escondido');
+  });
+});
