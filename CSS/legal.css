@@ -3,28 +3,50 @@
    ================================ */
 
 .legal-hero {
-  background: linear-gradient(135deg, #0A2540 0%, #1A3D6B 50%, #2563A8 100%);
+  background: var(--navy);
   padding: 5rem 6% 4rem;
   min-height: 30vh;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.legal-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(14,165,233,0.1) 0%, transparent 60%);
+}
+
+.legal-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(14,165,233,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14,165,233,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
 }
 
 .legal-hero-content {
   max-width: 680px;
+  position: relative;
+  z-index: 1;
 }
 
 .legal-hero h1 {
-font-family: 'Syne', sans-serif;
+  font-family: 'Syne', sans-serif;
   font-size: clamp(2rem, 4vw, 3rem);
   color: var(--white);
   margin: 0.75rem 0 0.5rem;
   line-height: 1.2;
+  font-weight: 800;
 }
 
 .legal-hero p {
   font-size: 13px;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.4);
   margin-top: 0.5rem;
 }
 
@@ -46,7 +68,7 @@ font-family: 'Syne', sans-serif;
 
 .legal-intro {
   background: var(--white);
-  border-left: 4px solid var(--gold);
+  border-left: 4px solid var(--blue);
   border-radius: 0 12px 12px 0;
   padding: 1.5rem 2rem;
 }
@@ -61,16 +83,17 @@ font-family: 'Syne', sans-serif;
   background: var(--white);
   border-radius: 14px;
   padding: 2rem;
-  border: 1px solid #E2E8F0;
+  border: 1px solid var(--border);
 }
 
 .legal-section h2 {
- font-family: 'Syne', sans-serif;
+  font-family: 'Syne', sans-serif;
   font-size: 1.3rem;
   color: var(--navy);
   margin-bottom: 1rem;
   padding-bottom: 0.75rem;
-  border-bottom: 1px solid #f0f4fa;
+  border-bottom: 1px solid var(--border);
+  font-weight: 700;
 }
 
 .legal-section p {
@@ -80,9 +103,7 @@ font-family: 'Syne', sans-serif;
   margin-bottom: 0.75rem;
 }
 
-.legal-section p:last-child {
-  margin-bottom: 0;
-}
+.legal-section p:last-child { margin-bottom: 0; }
 
 .legal-section ul {
   margin: 0.75rem 0;
@@ -104,18 +125,16 @@ font-family: 'Syne', sans-serif;
 }
 
 .legal-section a {
-  color: var(--gold);
+  color: var(--blue);
   text-decoration: none;
   font-weight: 500;
   transition: opacity 0.2s;
 }
 
-.legal-section a:hover {
-  opacity: 0.75;
-}
+.legal-section a:hover { opacity: 0.75; }
 
 .legal-contacto {
-  background: var(--blue-light);
+  background: var(--gold-pale);
   border-radius: 10px;
   padding: 1.25rem 1.5rem;
   margin-top: 1rem;

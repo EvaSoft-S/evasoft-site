@@ -63,7 +63,7 @@
 }
 
 .lp-quando .section-header p {
-  color: rgba(255,255,255,0.65);
+  color: rgba(255,255,255,0.6);
 }
 
 .lp-quando-grid {
@@ -73,27 +73,28 @@
 }
 
 .lp-quando-item {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(14,165,233,0.1);
   border-radius: 16px;
   padding: 2rem;
   transition: all 0.25s;
 }
 
 .lp-quando-item:hover {
-  background: rgba(255,255,255,0.08);
-  border-color: var(--gold);
+  background: rgba(14,165,233,0.05);
+  border-color: var(--blue);
   transform: translateY(-2px);
 }
 
 .lp-quando-num {
   display: block;
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Syne', sans-serif;
   font-size: 2.5rem;
-  color: var(--gold);
+  color: var(--blue);
   line-height: 1;
   margin-bottom: 0.75rem;
-  opacity: 0.6;
+  opacity: 0.5;
+  font-weight: 800;
 }
 
 .lp-quando-item h4 {
@@ -105,7 +106,7 @@
 
 .lp-quando-item p {
   font-size: 0.875rem;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.55);
   line-height: 1.7;
 }
 

@@ -3,32 +3,54 @@
    ================================ */
 
 .contacto-hero {
-    background: linear-gradient(135deg, #0A2540 0%, #1A3D6B 50%, #2563A8 100%);
+  background: var(--navy);
   padding: 5rem 6% 4rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contacto-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(14,165,233,0.12) 0%, transparent 60%);
+}
+
+.contacto-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(14,165,233,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14,165,233,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
 }
 
 .contacto-hero-content {
   max-width: 600px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .contacto-hero h1 {
-font-family: 'Syne', sans-serif;
+  font-family: 'Syne', sans-serif;
   font-size: clamp(2rem, 4vw, 3rem);
-   color: rgba(255,255,255,0.75);
+  color: var(--white);
   line-height: 1.2;
   margin: 0.75rem 0 1rem;
+  font-weight: 800;
 }
 
 .contacto-hero h1 em {
-  font-style: italic;
- color: var(--gold);
+  font-style: normal;
+  color: var(--blue);
 }
 
 .contacto-hero p {
   font-size: 1rem;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.6);
   line-height: 1.75;
 }
 
@@ -152,7 +174,7 @@ font-family: 'Syne', sans-serif;
 
 .contacto-form-wrapper {
   background: var(--white);
-  border: 2px solid #eef2f8;
+  border: 1px solid var(--border);
   border-radius: 20px;
   padding: 2.5rem;
 }
@@ -175,8 +197,8 @@ font-family: 'Syne', sans-serif;
 .contacto-form-page .form-group select,
 .contacto-form-page .form-group textarea {
   width: 100%;
-  background: #f8fafd;
-  border: 1.5px solid #dce8f5;
+  background: var(--cream);
+  border: 1.5px solid var(--border);
   border-radius: 8px;
   padding: 0.75rem 1rem;
   font-size: 14px;
@@ -190,7 +212,7 @@ font-family: 'Syne', sans-serif;
 .contacto-form-page .form-group select:focus,
 .contacto-form-page .form-group textarea:focus {
   border-color: var(--blue);
-  background: white;
+  background: var(--white);
 }
 
 .contacto-form-page .form-group textarea {
@@ -199,7 +221,7 @@ font-family: 'Syne', sans-serif;
 }
 
 .btn-submit-page {
-  background: var(--blue-dark);
+  background: var(--blue);
   color: white;
   border: none;
   border-radius: 8px;
@@ -223,7 +245,7 @@ font-family: 'Syne', sans-serif;
 }
 
 .btn-submit-page:hover {
-  background: var(--blue);
+  background: var(--gold-light);
   transform: translateY(-1px);
 }
 

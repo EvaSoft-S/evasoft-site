@@ -7,42 +7,61 @@
   align-items: center;
   gap: 4rem;
   padding: 4rem 6%;
-  background: linear-gradient(155deg, #f5f9ff 0%, #eaf3fd 45%, #deedfb 100%);
-  min-height: 80vh;
+  background: var(--navy);
+  min-height: 70vh;
   flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.servico-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(14,165,233,0.12) 0%, transparent 60%);
+}
+
+.servico-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(14,165,233,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14,165,233,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
 }
 
 .servico-hero-content {
   flex: 1;
   min-width: 280px;
   max-width: 560px;
- 
-}
-
-.servico-hero-content p {
-  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .breadcrumb {
   display: inline-block;
   font-size: 13px;
-  color: var(--blue);
+  color: rgba(255,255,255,0.4);
   text-decoration: none;
   font-weight: 500;
   margin-bottom: 1.5rem;
-  transition: opacity 0.2s;
+  transition: color 0.2s;
 }
 
 .breadcrumb:hover {
-  opacity: 0.7;
+  color: var(--blue);
 }
 
 .servico-hero-image {
   flex: 1;
   min-width: 280px;
-  border-radius: 20px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(55, 138, 221, 0.15);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(14,165,233,0.15);
 }
 
 .servico-hero-image img {
@@ -108,20 +127,34 @@
    ================================ */
 
 .servico-preco {
-  background: var(--blue-light);
+  background: var(--navy);
   padding: 5.5rem 6%;
   display: flex;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.servico-preco::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(14,165,233,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14,165,233,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
 }
 
 .preco-card {
-  background: var(--white);
+  background: rgba(255,255,255,0.04);
   border-radius: 24px;
   padding: 3rem;
   max-width: 560px;
   width: 100%;
-  border: 2px solid #dce8f5;
+  border: 1px solid rgba(14,165,233,0.15);
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .preco-header {
@@ -131,8 +164,9 @@
 .preco-header h2 {
   font-family: 'Syne', sans-serif;
   font-size: 1.8rem;
-  color: var(--blue-dark);
+  color: var(--white);
   margin-top: 0.5rem;
+  font-weight: 700;
 }
 
 .preco-valor {
@@ -145,20 +179,21 @@
 
 .preco-desde {
   font-size: 14px;
-  color: var(--gray);
+  color: rgba(255,255,255,0.5);
   font-weight: 500;
 }
 
 .preco-numero {
   font-family: 'Syne', sans-serif;
   font-size: 3rem;
-  color: var(--blue-dark);
+  color: var(--blue);
   line-height: 1;
+  font-weight: 800;
 }
 
 .preco-nota {
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: rgba(255,255,255,0.5);
   line-height: 1.7;
   margin-bottom: 1.75rem;
 }
@@ -174,7 +209,7 @@
 
 .preco-inclui li {
   font-size: 0.9rem;
-  color: var(--blue-dark);
+  color: rgba(255,255,255,0.75);
   font-weight: 500;
 }
 
@@ -218,7 +253,7 @@
    ================================ */
 
 .servico-inclui {
-  background: var(--blue-light);
+  background: var(--cream);
   padding: 5.5rem 6%;
 }
 
@@ -233,27 +268,27 @@
   background: var(--white);
   border-radius: 16px;
   padding: 1.75rem;
-  border: 1px solid #dce8f5;
+  border: 1px solid var(--border);
   transition: all 0.25s;
 }
 
 .inclui-card:hover {
   border-color: var(--blue);
-  box-shadow: 0 8px 32px rgba(55, 138, 221, 0.1);
+  box-shadow: 0 8px 32px rgba(14,165,233,0.1);
   transform: translateY(-2px);
 }
 
 .inclui-icon {
   width: 44px;
   height: 44px;
-  background: var(--blue-light);
+  background: var(--gold-pale);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
-  color: var(--blue-dark);
-  border: 1px solid #dce8f5;
+  color: var(--blue);
+  border: 1px solid rgba(14,165,233,0.15);
 }
 
 .inclui-icon svg {

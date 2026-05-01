@@ -3,33 +3,56 @@
    ================================ */
 
 .empresa-hero {
-  background: linear-gradient(135deg, #0A2540 0%, #1A3D6B 50%, #2563A8 100%);
+  background: var(--navy);
   padding: 6rem 6% 5rem;
   min-height: 45vh;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.empresa-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(14,165,233,0.12) 0%, transparent 60%);
+}
+
+.empresa-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(14,165,233,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14,165,233,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
 }
 
 .empresa-hero-content {
   max-width: 680px;
+  position: relative;
+  z-index: 1;
 }
 
 .empresa-hero h1 {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
   line-height: 1.1;
   color: var(--white);
   margin: 0.75rem 0 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
 }
 
 .empresa-hero h1 em {
-  font-style: italic;
-  color: var(--gold);
+  font-style: normal;
+  color: var(--blue);
 }
 
 .empresa-hero p {
   font-size: 1.05rem;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.6);
   line-height: 1.8;
   max-width: 580px;
 }
@@ -102,15 +125,15 @@
 
 .qs-mvv-card {
   background: var(--white);
-  border: 1px solid #E2E8F0;
-  border-radius: 20px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
   padding: 2rem;
   transition: all 0.25s;
 }
 
 .qs-mvv-card:hover {
-  border-color: var(--gold);
-  box-shadow: 0 8px 32px rgba(5,172,250,0.1);
+  border-color: var(--blue);
+  box-shadow: 0 8px 32px rgba(14,165,233,0.1);
   transform: translateY(-2px);
 }
 
@@ -125,6 +148,7 @@
   font-size: 1.4rem;
   color: var(--navy);
   margin-bottom: 0.75rem;
+  font-weight: 700;
 }
 
 .qs-mvv-card p {
@@ -158,6 +182,18 @@
 .qs-numeros {
   background: var(--navy);
   padding: 4rem 6%;
+  position: relative;
+  overflow: hidden;
+}
+
+.qs-numeros::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(14,165,233,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14,165,233,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
 }
 
 .qs-numeros-grid {
@@ -165,24 +201,26 @@
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 2rem;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .qs-numero-val {
   display: block;
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Syne', sans-serif;
   font-size: 2.8rem;
-  color: var(--gold);
+  color: var(--blue);
   line-height: 1;
   margin-bottom: 0.5rem;
+  font-weight: 800;
 }
 
 .qs-numero-label {
   display: block;
   font-size: 13px;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.5);
   line-height: 1.5;
 }
-
 /* ================================
    EQUIPA
    ================================ */

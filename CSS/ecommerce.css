@@ -56,6 +56,23 @@
 .ec-tipos {
   background: var(--navy);
   padding: 5.5rem 6%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ec-tipos::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(14,165,233,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14,165,233,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.ec-tipos .section-header {
+  position: relative;
+  z-index: 1;
 }
 
 .ec-tipos .section-header h2 {
@@ -63,18 +80,20 @@
 }
 
 .ec-tipos .section-header p {
-  color: rgba(255,255,255,0.65);
+  color: rgba(255,255,255,0.6);
 }
 
 .ec-tipos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 1rem;
+  position: relative;
+  z-index: 1;
 }
 
 .ec-tipo {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(14,165,233,0.1);
   border-radius: 14px;
   padding: 1.5rem 1rem;
   text-align: center;
@@ -83,8 +102,8 @@
 }
 
 .ec-tipo:hover {
-  background: rgba(255,255,255,0.09);
-  border-color: var(--gold);
+  background: rgba(14,165,233,0.06);
+  border-color: var(--blue);
   transform: translateY(-2px);
 }
 
@@ -97,7 +116,7 @@
 .ec-tipo h4 {
   font-size: 13px;
   font-weight: 500;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.75);
   line-height: 1.4;
 }
 
