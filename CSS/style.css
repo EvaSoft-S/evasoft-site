@@ -1562,8 +1562,8 @@ footer .logo-sub {
 
   .hero-imagem {
     position: relative;
-    right: 13%;
-    top: 50%;
+    right: auto;
+    top: auto;
     transform: none;
     width: 240px;
     height: 240px;
@@ -1680,8 +1680,8 @@ footer .logo-sub {
 
   .hero-imagem {
     position: relative;
-    right: 13%;
-    top: 50%;
+    right: auto;
+    top: auto;
     transform: none;
     width: 200px;
     height: 200px;
