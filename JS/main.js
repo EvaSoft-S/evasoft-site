@@ -2,7 +2,8 @@
 // MENU HAMBURGER — NAVEGAÇÃO MOBILE
 // ================================
 // Abre e fecha o menu de navegação em ecrãs
-// pequenos e gere os dropdowns no mobile.
+// pequenos e gere os dropdowns no mobile
+// como submenus expansíveis.
 // ================================
 
 const toggle = document.getElementById('navToggle');
@@ -12,23 +13,31 @@ if (toggle && navMenu) {
   toggle.addEventListener('click', function () {
     toggle.classList.toggle('active');
     navMenu.classList.toggle('open');
+    document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
   });
 
   navMenu.querySelectorAll('a:not(.nav-dropdown-trigger)').forEach(function (link) {
     link.addEventListener('click', function () {
       toggle.classList.remove('active');
       navMenu.classList.remove('open');
+      document.body.style.overflow = '';
     });
   });
 }
 
-// Dropdowns no mobile — abre ao clicar
+// Dropdowns mobile — expandir ao clicar
 document.querySelectorAll('.nav-dropdown-trigger').forEach(function (trigger) {
   trigger.addEventListener('click', function (e) {
     if (window.innerWidth <= 768) {
       e.preventDefault();
       const dropdown = this.closest('.nav-dropdown');
-      dropdown.classList.toggle('open');
+      const isOpen = dropdown.classList.contains('open');
+      document.querySelectorAll('.nav-dropdown').forEach(function (d) {
+        d.classList.remove('open');
+      });
+      if (!isOpen) {
+        dropdown.classList.add('open');
+      }
     }
   });
 });
