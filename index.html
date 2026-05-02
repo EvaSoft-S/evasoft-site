@@ -507,7 +507,71 @@
 </div>
   </footer>
 
-<script src="js/main.js"></script>
+<!-- CHATBOT EVASOFT -->
+  <div class="chat-widget" id="chatWidget">
+
+    <!-- Botão de abrir -->
+    <button class="chat-toggle" id="chatToggle" aria-label="Abrir assistente">
+      <svg class="chat-icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+      </svg>
+      <svg class="chat-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+      <span class="chat-notif">1</span>
+    </button>
+
+    <!-- Janela do chat -->
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-avatar">ES</div>
+          <div>
+            <div class="chat-name">Assistente EvaSoft</div>
+            <div class="chat-status">
+              <span class="chat-status-dot"></span>
+              Online agora
+            </div>
+          </div>
+        </div>
+        <button class="chat-close" id="chatClose">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6L6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="chat-msg bot">
+          <div class="chat-bubble">
+            Olá! 👋 Sou o assistente da <strong>EvaSoft Solutions</strong>. Posso ajudá-lo com informações sobre os nossos serviços, preços e prazos. Em que posso ajudar?
+          </div>
+        </div>
+        <div class="chat-sugestoes" id="chatSugestoes">
+          <button class="chat-sugestao">Que serviços oferecem?</button>
+          <button class="chat-sugestao">Quais são os preços?</button>
+          <button class="chat-sugestao">Quanto tempo demora?</button>
+          <button class="chat-sugestao">Como posso contactar?</button>
+        </div>
+      </div>
+
+      <div class="chat-input-area">
+        <input type="text" id="chatInput" placeholder="Escreva a sua mensagem..." autocomplete="off">
+        <button id="chatSend">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+
+  
+ 
+  <script src="js/chatbot.js"></script>
+   <script src="js/main.js"></script>
 
 </body>
 
