@@ -1672,6 +1672,47 @@ footer .logo-sub {
   .stat-num { font-size: 2rem; }
   .qs-numeros-grid { grid-template-columns: repeat(2, 1fr); }
 
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 5% 4rem;
+    min-height: auto;
+    text-align: center;
+  }
+
+  .hero-imagem {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2rem;
+    display: block;
+    order: -1;
+  }
+
+  .hero-content {
+    text-align: center;
+    width: 100%;
+    order: 1;
+  }
+
+  .hero-content h1,
+  .hero-content p {
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
 }
 
 @media (max-width: 480px) {
