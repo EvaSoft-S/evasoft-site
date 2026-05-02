@@ -359,3 +359,19 @@
   color: var(--gray) !important;
   opacity: 0.7;
 }
+
+/* ================================
+   TITULOS - TIPOS DE SISTEMAS
+   ================================ */
+
+.servico-hero-content h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  color: var(--white);
+  margin: 1rem 0 1.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  max-width: 100%;
+  width: 100%;
+}

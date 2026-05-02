@@ -37,7 +37,7 @@
 
 .legal-hero h1 {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(2rem, 4vw, 3rem);
+   font-size: clamp(1.7rem, 3.5vw, 2.8rem);
   color: var(--white);
   margin: 0.75rem 0 0.5rem;
   line-height: 1.2;
