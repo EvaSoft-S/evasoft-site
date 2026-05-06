@@ -452,7 +452,7 @@ nav ul a:hover {
 .hero .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('../assets/Home2.jpg');
+  background-image: url('../assets/Home4.jpg');
   background-size: cover;
   background-position: center;
   opacity: 0.50;
@@ -2256,5 +2256,120 @@ footer .logo-sub {
   .chat-toggle {
     width: 50px;
     height: 50px;
+  }
+}
+
+/* ================================
+   SECÇÃO DE ESTATÍSTICAS
+   ================================ */
+
+.stats-section {
+  background: var(--navy);
+  padding: 5.5rem 6%;
+  position: relative;
+  overflow: hidden;
+}
+
+.stats-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(14,165,233,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14,165,233,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.stats-section .section-header {
+  position: relative;
+  z-index: 1;
+}
+
+.stats-section .section-header h2 {
+  color: var(--white);
+}
+
+.stats-section .section-header p {
+  color: rgba(255,255,255,0.6);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.stat-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(14,165,233,0.12);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.stat-card:hover {
+  background: rgba(14,165,233,0.06);
+  border-color: var(--blue);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(14,165,233,0.1);
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(14,165,233,0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+  color: var(--blue);
+  border: 1px solid rgba(14,165,233,0.2);
+}
+
+.stat-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.stat-numero {
+  font-family: 'Syne', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--blue);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+}
+
+.stat-titulo {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.35rem;
+}
+
+.stat-desc {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-numero {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }

@@ -226,3 +226,43 @@ document.querySelectorAll('.preco-toggle').forEach(function (toggle) {
     item.classList.add('escondido');
   });
 });
+
+// ================================
+// CONTADOR ANIMADO — ESTATÍSTICAS
+// ================================
+// Anima os números da secção de
+// estatísticas quando entram no ecrã.
+// ================================
+
+const contadores = document.querySelectorAll('.stat-numero');
+
+if (contadores.length > 0) {
+  const observadorContador = new IntersectionObserver(function (entradas) {
+    entradas.forEach(function (entrada) {
+      if (entrada.isIntersecting) {
+        const el = entrada.target;
+        const alvo = parseInt(el.getAttribute('data-target'));
+        const sufixo = el.getAttribute('data-sufixo') || '';
+        const duracao = 1800;
+        const passos = 60;
+        const intervalo = duracao / passos;
+        let atual = 0;
+
+        const timer = setInterval(function () {
+          atual += alvo / passos;
+          if (atual >= alvo) {
+            atual = alvo;
+            clearInterval(timer);
+          }
+          el.textContent = Math.floor(atual) + sufixo;
+        }, intervalo);
+
+        observadorContador.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  contadores.forEach(function (contador) {
+    observadorContador.observe(contador);
+  });
+}
